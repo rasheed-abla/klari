@@ -14,9 +14,57 @@ const infoList = ref([
     name: 'B-Jugend'
   },
   {
-    id: 'c',
+    id: 'C1',
     name: 'C-Jugend'
-  }
+  },
+  {
+    id: 'D1',
+    name: 'D1-Jugend'
+  },
+  {
+    id: 'D2',
+    name: 'D2-Jugend'
+  },
+  {
+    id: 'D3',
+    name: 'D3-Jugend'
+  },
+  {
+    id: 'D4',
+    name: 'D4-Jugend'
+  },
+  {
+    id: 'D5',
+    name: 'D5-Jugend'
+  },
+  {
+    id: 'E1',
+    name: 'E1-Jugend'
+  },
+  {
+    id: 'E2',
+    name: 'E2-Jugend'
+  },
+  {
+    id: 'E3',
+    name: 'E3-Jugend'
+  },
+  {
+    id: 'F1',
+    name: 'F1-Jugend'
+  },
+  {
+    id: 'F2',
+    name: 'F2-Jugend'
+  },
+  {
+    id: 'G1',
+    name: 'G1-Jugend'
+  },
+  {
+    id: 'G2',
+    name: 'G2-Jugend'
+  },
 ])
 
 const emit = defineEmits(['close', 'closeAll'])
