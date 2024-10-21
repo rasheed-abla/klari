@@ -141,7 +141,6 @@ onMounted(() => {
     <section
       class="flex md:flex-row flex-col justify-center items-center md:justify-around my-28 flex-wrap"
     >
-      <TeamWidget id="1M" :team="teams['1M']" />
       <TeamWidget id="2M" :team="teams['2M']" />
       <TeamWidget id="Alte-herren" :team="teams['Alte-herren']" />
       <TeamWidget id="jugend" :team="jugend" />

@@ -6,10 +6,6 @@ import { useRouter } from 'vue-router'
 
 const infoList = ref([
   {
-    id: '1M',
-    name: '1.Mannschaft'
-  },
-  {
     id: '2M',
     name: '2.Mannschaft'
   }

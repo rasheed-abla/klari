@@ -26,6 +26,7 @@ function scroll() {
       <div class="text-[32px] text-center m-3">Navigation</div>
       <div class="sam-center flex-col mb-4 text-[20px]">
         <RouterLink @click="scroll()" class="item" to="/team/Alte-herren">Alte Herren</RouterLink>
+        <RouterLink @click="scroll()" class="item" to="/team/Jugend">Jugend</RouterLink>
         <RouterLink @click="scroll()" class="item" to="/aktuell">Aktuell</RouterLink>
         <RouterLink @click="scroll()" class="item" to="/kontakt">Kontakt</RouterLink>
         <RouterLink @click="scroll()" class="item" to="/impressum">Impressum</RouterLink>
