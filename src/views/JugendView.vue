@@ -1,8 +1,17 @@
 <script lang="ts" setup>
+import { onMounted } from 'vue';
 import useTeams from '../composables/teams'
 import JugendWidget from '@/components/JugendWidget.vue'
 
 const teams = useTeams().allTeams
+function scrollUp() {
+  window.scrollTo(0, 0)
+}
+
+onMounted(() => {
+  scrollUp()
+})
+
 </script>
 
 <!---- Html ---------------------------------------------------->

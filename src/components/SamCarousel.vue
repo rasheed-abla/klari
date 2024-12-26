@@ -8,7 +8,7 @@
         class="carousel-slide px-3 sam-center"
       >
         <div class="xl:w-[400px]">
-          <a href="https://vueuse.org/core/useIntersectionObserver/" target="_blank">
+          <a :href="sponsors_urls[index]" target="_blank">
             <img :src="awsUrl + src" class="sponsor-image w-full" />
           </a>
         </div>
@@ -25,7 +25,6 @@ import { onMounted, ref } from 'vue'
 import { useWindowSize } from '@vueuse/core'
 
 const awsUrl = 'https://klarenthal.s3.eu-north-1.amazonaws.com/logos/'
-
 const props = defineProps({
   slidesCount: { type: Number, default: 1 }
 })
@@ -36,6 +35,12 @@ let showSlides = ref(false)
 let slideWidth = null
 const activeIndex = ref(0)
 const sponsors = ref(['parusel.jpg', 'bn.png', 'taunus.png', 'naspa.jpg'])
+const sponsors_urls = [
+  'https://parusel-kontakt.de/',
+  'https://www.wvb.de/',
+  'https://taunuslux.de/',
+  'https://www.naspa.de/'
+]
 
 onMounted(() => {
   const { width } = useWindowSize()

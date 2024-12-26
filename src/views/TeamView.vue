@@ -74,7 +74,12 @@ onMounted(() => {
   const name = route.params.name
   setTeam(name)
   animateTitle()
+  scrollUp()
 })
+
+function scrollUp() {
+  window.scrollTo(0, 0)
+}
 </script>
 
 <!---- Html ---------------------------------------------------->

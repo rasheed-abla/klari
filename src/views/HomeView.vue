@@ -22,7 +22,7 @@ const src = computed(() => {
 const teams = useTeams().allTeams
 const jugend = {
   teamPhoto:
-    'https://www.sg-germania-wiesbaden.de/wp-content/uploads/2023/10/Kadir_Deniz_Yalcinkaya.jpg',
+    '',
   teamName: 'Klarenthal Jugend'
 }
 
@@ -139,11 +139,15 @@ onMounted(() => {
     </div> -->
 
     <section
-      class="flex md:flex-row flex-col justify-center items-center md:justify-around my-28 flex-wrap"
+      class=""
     >
+    <h1 class="manschaften">Unsere Mannschaften</h1>
+    <div class="flex md:flex-row flex-col justify-center items-center md:justify-around my-[65px] flex-wrap">
+
       <TeamWidget id="2M" :team="teams['2M']" />
       <TeamWidget id="Alte-herren" :team="teams['Alte-herren']" />
       <TeamWidget id="jugend" :team="jugend" />
+    </div>
     </section>
     <section class="md:mb-[180px]">
       <SlideShow height="400px" autorun :slides="src" />
@@ -158,6 +162,13 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+
+.manschaften {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 40px;
+}
+
 .numbers {
   background: #00000026;
   padding: 100px;
