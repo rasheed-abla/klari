@@ -17,7 +17,7 @@ const bBorder = ref(null)
 const text = ref(null)
 const entrancePhoto = ref(null)
 let show = ref(true)
-const aws_url = "https://klarenthal.s3.eu-north-1.amazonaws.com/trainerphotos/"
+const aws_url = 'https://klarenthal.s3.eu-north-1.amazonaws.com/trainerphotos/'
 
 watch(
   () => route.params.name,
@@ -88,7 +88,7 @@ function scrollUp() {
   <div>
     <section class="entrance relative mb-6 overflow-hidden md:h-screen">
       <div ref="entrancePhoto" class="entrance-photo">
-        <img :src="aws_url+team?.teamPhoto" alt="" />
+        <img :src="aws_url + team?.teamPhoto" alt="" />
       </div>
       <div class="team-name flex flex-col justify-center items-center">
         <div ref="tBorder" class="border-t-4 border-white w-full mb-4"></div>
@@ -107,15 +107,15 @@ function scrollUp() {
         </div>
 
         <div>
-          <img :src="aws_url+team?.teamPhoto" alt="" />
+          <img :src="aws_url + team?.teamPhoto" alt="" />
         </div>
       </div>
     </section>
     <section class="trainers sam-center">
       <div class="sam-max-width">
         <div class="text-center">
-          <h1>Trainer Team</h1>
-          <p>Das Trainer Team der {{ team?.teamName }}</p>
+          <h1>Trainer-Team</h1>
+          <p>Das Trainer-Team der {{ team?.teamName }}</p>
         </div>
 
         <div class="trainers-info md:flex md:justify-around">
@@ -125,13 +125,13 @@ function scrollUp() {
             :key="trainer.trainerName"
           >
             <div class="trainer-img">
-              <img :src="aws_url+trainer.trainerPhoto" />
+              <img :src="aws_url + trainer.trainerPhoto" />
             </div>
             <div class="text-center">
               <h2 class="md:text-base">{{ trainer.trainerName }}</h2>
               <h3 class="md:text-xs">{{ trainer.trainerPosition }}</h3>
 
-              <a :href="'mailto:'+trainer.email"><button class="btn">Email</button></a>
+              <a :href="'mailto:' + trainer.email"><button class="btn">Email</button></a>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ function scrollUp() {
     color: #fff;
   }
 }
-.trainer-img{
+.trainer-img {
   display: flex;
   justify-content: center;
   img {

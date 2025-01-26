@@ -72,7 +72,7 @@ function preventScroll(event) {
       <div @click="toggleJugend()" class="item has-items">Jugend</div>
       <RouterLink class="item" @click="close()" to="/team/Alte-herren">Alte Herren</RouterLink>
       <RouterLink class="item" @click="close()" to="/aktuell">Aktuell</RouterLink>
-      <RouterLink class="item" @click="close()" to="/kontakt">kontakt</RouterLink>
+      <RouterLink class="item" @click="close()" to="/kontakt">Kontakt</RouterLink>
       <RouterLink class="item" @click="close()" to="/impressum">Impressum</RouterLink>
       <RouterLink class="item" @click="close()" to="/datenschutz">Datenschutzerklärung</RouterLink>
     </div>

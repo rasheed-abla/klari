@@ -17,7 +17,7 @@ const src = computed(() => {
 <!---- Html ---------------------------------------------------->
 
 <template>
-  <div class="text">Aktuel</div>
+  <div class="text">Aktuell</div>
   <!-- <SlideShow height="400px" autorun :slides="src" /> -->
   <div class="parent w-full p-2">
     <img
@@ -38,13 +38,13 @@ const src = computed(() => {
   font-weight: bold;
 }
 
-.parent{
+.parent {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  img{
-    max-width:500px ;
+  img {
+    max-width: 500px;
     width: 100%;
   }
 }
